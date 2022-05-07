@@ -17,9 +17,9 @@ for food in foods[-2:]:
 
 #exercise 4 
 hometown = {
-    'city': 'Chicago', 
-    'state': 'IL',
-    'population': '2.71 million'
+    'city': 'Acapulco', 
+    'state': 'Guerrero',
+    'population': '3.541 million'
 }
 
 print(f"I was born in {hometown['city']}, {hometown['state']}, where there is a population of {hometown['population']}")
@@ -46,5 +46,10 @@ for  student_name in awesome_students:
 #exercise 8  
 # [<expression> for <item> in <list>]
 # This reads as: I want <expression> for each <item> in <list>
+
 a_in_foods = [food for food in foods if 'a' in food]
 print(a_in_foods)
+
+#also same as above
+for food in [food for food in foods if 'a' in food]:
+  print(food)
